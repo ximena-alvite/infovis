@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi tiempo en pantalla</title>
 
   <style>
-      body {
-          font-family: Arial, sans-serif;
-          margin: 40px;
-          line-height: 1.6;
-      }
-      h1, h2 {
-          text-align: center;
-      }
-      .section {
-          margin-top: 60px;
-      }
-      .center {
-          display: flex;
-          justify-content: center;
-          margin-bottom: 20px;
-      }
-      object, iframe {
-          max-width: 100%;
-      }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #ffffff;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .viz-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    object, iframe, .tableauPlaceholder {
+      margin-top: 20px;
+      width: 100%;
+    }
   </style>
 </head>
 
 <body>
 
-<!-- ========================================================= -->
-<!-- 🔵 1) RAWGRAPHS — SVG -->
-<!-- ========================================================= -->
-
-<h1>¿Qué aplicaciones dominan mi tiempo en pantalla?</h1>
-
-<div class="center">
-  <object data="./APPS.svg" type="image/svg+xml" style="width: 90%; max-width: 900px;">
-      Tu navegador no soporta SVG.
-  </object>
-</div>
+  <!-- =========================
+       1) RAWGRAPHS – BUBBLES
+       ========================= -->
+  <div class="viz-container">
+    <h1>¿Qué aplicaciones dominan mi tiempo en pantalla?</h1>
+    <object data="./APPS.svg" type="image/svg+xm
