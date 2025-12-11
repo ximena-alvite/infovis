@@ -25,11 +25,89 @@
 
 <body>
 
-<!-- ========================================= -->
-<!--              GRAFICO RAWGRAPHS (SVG)     -->
-<!-- ========================================= -->
-
 <h1>¿Qué aplicaciones dominan mi tiempo en pantalla?</h1>
 
+<!-- RAWGRAPHS -->
 <div class="chart">
-  <object data="APPS.svg" type="image/s
+  <object data="APPS.svg" type="image/svg+xml" style="width:100%;">
+    Tu navegador no soporta SVG.
+  </object>
+</div>
+
+<h2>¿Cómo varía mi uso del celular día a día?</h2>
+
+<!-- FLOURISH -->
+<div class="chart">
+  <div class="flourish-embed flourish-chart" data-src="visualisation/26769371">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
+</div>
+
+<h2>¿En qué se diferencia mi uso entre semana y fin de semana?</h2>
+
+<!-- DATAWRAPPER -->
+<div class="chart">
+  <iframe title="Comparación semana vs finde"
+  aria-label="Stacked column chart"
+  id="datawrapper-chart-nxCCO"
+  src="https://datawrapper.dwcdn.net/nxCCO/2/"
+  scrolling="no"
+  frameborder="0"
+  style="width: 100%; border: none;"
+  height="508"
+  data-external="1"></iframe>
+
+<script>
+window.addEventListener("message", function(event) {
+  if (event.data["datawrapper-height"]) {
+    var iframes = document.querySelectorAll("iframe");
+    for (var chartId in event.data["datawrapper-height"]) {
+      for (var i = 0; i < iframes.length; i++) {
+        if (iframes[i].contentWindow === event.source) {
+          iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+        }
+      }
+    }
+  }
+});
+</script>
+</div>
+
+<h2>¿Cuántos minutos uso el celular cada día?</h2>
+
+<!-- TABLEAU -->
+<div class='chart'>
+  <div class='tableauPlaceholder' id='vizTableau' style='position: relative; width: 100%; height: 800px;'>
+    <noscript>
+      <img alt='Uso diario'
+      src='https://public.tableau.com/static/images/Us/Usodiariodelcelularminutosporda/Cuntosminutosusoelcelularcadada/1.png'
+      />
+    </noscript>
+
+    <object class='tableauViz' style='display:block; width:100%; height:100%;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Usodiariodelcelularminutosporda/Cuntosminutosusoelcelularcadada' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https://public.tableau.com/static/images/Us/Usodiariodelcelularminutosporda/Cuntosminutosusoelcelularcadada/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+    </object>
+  </div>
+</div>
+
+<script>
+  var viz = document.getElementById('vizTableau').getElementsByTagName('object')[0];
+  var script = document.createElement('script');
+  script.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  viz.parentNode.insertBefore(script, viz);
+</script>
+
+</body>
+</html>
